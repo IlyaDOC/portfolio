@@ -16,11 +16,58 @@
     font-weight: 600;
 }
 
+@keyframes progress-beginner {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes progress-regular {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progress-advanced {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+[data-lvl="advanced"] {
+    animation: progress-advanced 3s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-lvl="regular"] {
+    animation: progress-regular 3s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-lvl="beginner"] {
+    animation: progress-beginner 3s linear;
+    animation-fill-mode: forwards;
+}
+
+
 body {
     background-color: #0F1624;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #FFF;
+    position: relative;
 }
 
 .container {
@@ -37,6 +84,10 @@ body {
     border: 0;
     cursor: pointer;
     transition: .5s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     &:hover {
         box-shadow: 0 0 13px 8px rebeccapurple;
@@ -45,6 +96,11 @@ body {
 
 .header {
     margin-bottom: 157px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0F1624;
 
     .container {
         display: flex;
@@ -143,6 +199,9 @@ body {
             margin-left: 254px;
             max-width: 989px;
             margin-bottom: 73px;
+            p:first-child {
+                padding-bottom: 30px;
+            }
         }
 
         .hero-button {
@@ -277,7 +336,7 @@ body {
                         border-radius: 83px;
                         background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
                         height: 100%;
-                        width: 500px;
+                        width: 0;
                     }
                 }
 
