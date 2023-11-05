@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -59,7 +60,7 @@ body {
             text-decoration: none;
 
             img {
-                width: 150px;
+                width: 100px;
                 height: auto;
             }
 
@@ -80,6 +81,14 @@ body {
 
 
                 .navbar-item {
+                    transition: 0.3s ease all;
+                    border-top: 4px solid #0F1624;
+                    border-bottom: 4px solid #0F1624;
+                    &:hover {
+                        border-top: 4px solid #ffffff;
+                        border-bottom: 4px solid #ffffff;
+                        padding: 6px 0;
+                    }
                     &:not(:last-child) {
                         margin-right: 98px;
                     }
@@ -274,8 +283,11 @@ body {
 
                 .technologies-skill-level {
                     position: absolute;
-                    top: 33px;
+                    top: 23px;
                     right: 350px;
+                    font-size: 24px;
+                    font-style: normal;
+                    line-height: normal;
                 }
             }
         }
