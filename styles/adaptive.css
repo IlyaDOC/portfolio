@@ -1,0 +1,253 @@
+@media screen and (max-width: 1784px) {
+    .hero-main-image img {
+        width: 400px;
+    }
+
+    .hero-title, .projects-title {
+        font-size: 50px;
+    }
+
+    .hero-description {
+        margin-left: 192px;
+
+        p {
+            font-size: 30px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1522px) {
+    .hero-description {
+        max-width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .header .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar-item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+
+    .navbar-item a {
+        font-size: 24px;
+    }
+
+    .project-item-description {
+        font-size: 17px;
+        height: 100px;
+    }
+
+    .project-item-button {
+        font-size: 17px;
+        width: 200px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1319px) {
+    .projects-title, .technologies-title {
+        text-align: center;
+    }
+
+    .projects-title {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1262px) {
+    .hero-description {
+        & p {
+            font-size: 22px;
+        }
+    }
+
+    .hero-main-image img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1163px) {
+    .navbar-item {
+        a {
+            font-size: 24px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    .hero-description {
+        max-width: 600px;
+    }
+
+    .hero-title, .projects-title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+
+}
+
+@media screen and (max-width: 1140px) {
+    .technologies-skill-name {
+        font-size: 22px;
+    }
+
+    .technologies-skill-level {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .hero-main-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .projects .container {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .navTrigger {
+        display: block;
+    }
+
+
+    .main_list {
+        display: none;
+    }
+
+    .main_list.show_list {
+        display: flex;
+
+        .navbar-items {
+            position: absolute;
+            flex-direction: column;
+            align-items: end;
+            justify-content: start;
+            top: 140px;
+            right: 0;
+            background-color: #111;
+            width: 100%;
+            height: 100vh;
+            padding-right: 30px;
+
+            .navbar-item {
+                margin: 0;
+            }
+        }
+    }
+
+    .hero {
+        .container {
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+    }
+
+    .hero-title, .hero-description, .hero-button {
+        margin-left: 0;
+    }
+
+    .button {
+        width: 240px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .technologies-skill-name {
+        font-size: 16px;
+    }
+
+    .technologies-skill-scale {
+        height: 18px;
+    }
+
+    .technologies-skill-level {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .technologies-skill-name {
+        font-size: 12px;
+    }
+
+    .technologies-skill-scale {
+        height: 18px;
+    }
+
+    .technologies-skill-level {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .hero-title, .projects-title {
+        font-size: 30px;
+    }
+
+    .hero-description p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .projects-items {
+        grid-template-rows: 550px;
+    }
+
+    .project-item-title {
+        font-size: 27px;
+    }
+
+    .project-item-button {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .hero-button {
+        margin: 0 auto 255px;
+        width: 220px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
