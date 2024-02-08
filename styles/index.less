@@ -34,50 +34,7 @@
     font-weight: 600;
 }
 
-@keyframes progress-beginner {
-    0% {
-        width: 0;
-    }
 
-    100% {
-        width: 25%;
-    }
-}
-
-@keyframes progress-regular {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes progress-advanced {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
-[data-lvl="advanced"] {
-    animation: progress-advanced 3s linear;
-    animation-fill-mode: forwards;
-}
-
-[data-lvl="regular"] {
-    animation: progress-regular 3s linear;
-    animation-fill-mode: forwards;
-}
-
-[data-lvl="beginner"] {
-    animation: progress-beginner 3s linear;
-    animation-fill-mode: forwards;
-}
 
 
 body {
@@ -435,6 +392,50 @@ body {
         }
     }
 }
+@keyframes progress-beginner {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes progress-regular {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes progress-advanced {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+[data-lvl="advanced"] {
+    animation: progress-advanced 3s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-lvl="regular"] {
+    animation: progress-regular 3s linear;
+    animation-fill-mode: forwards;
+}
+
+[data-lvl="beginner"] {
+    animation: progress-beginner 3s linear;
+    animation-fill-mode: forwards;
+}
 
 .technologies {
     margin-bottom: 329px;
@@ -464,7 +465,7 @@ body {
                 }
 
                 .technologies-skill-scale {
-                    width: 1320px;
+                    width: 70%;
                     height: 32.3px;
                     border-radius: 83px;
                     background: #162950;
@@ -480,16 +481,17 @@ body {
                         height: 100%;
                         width: 0;
                     }
+                    .technologies-skill-level {
+                        position: absolute;
+                        top: -110%;
+                        right: 50px;
+                        font-size: 24px;
+                        font-style: normal;
+                        line-height: normal;
+                    }
                 }
 
-                .technologies-skill-level {
-                    position: absolute;
-                    top: 15px;
-                    right: 350px;
-                    font-size: 24px;
-                    font-style: normal;
-                    line-height: normal;
-                }
+
             }
         }
 
