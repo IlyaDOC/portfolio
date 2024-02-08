@@ -49,6 +49,7 @@ export class App {
         document.querySelectorAll('.navbar-item').forEach(item=> {
            item.addEventListener('click', ()=> {
                this.mainListElement.classList.toggle('show_list');
+               this.navTriggerElement.classList.toggle('active');
            });
         });
     }
