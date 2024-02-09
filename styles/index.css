@@ -524,6 +524,7 @@ body {
 
 .technologies-skills {
     margin-left: 325px;
+    margin-bottom: 200px;
 }
 
 .technologies-skill {
@@ -582,7 +583,7 @@ body {
     margin-left: 300px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(auto-fill, minmax(220px, 400px));
     grid-row-gap: 32px;
     grid-column-gap: 130px;
 }
