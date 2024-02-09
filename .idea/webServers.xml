@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a169cb3a-ca30-4b52-9034-c49fbcb51a7f" name="portfilo" url="https://web-bullet.ru/">
+        <fileTransfer rootFolder="/var/www/u2224108/data" accessType="SFTP" host="31.31.196.253" port="22" sshConfigId="c34b79f4-05f4-4a28-a8e5-df3f65c12998" sshConfig="u2224108@31.31.196.253:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

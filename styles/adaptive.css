@@ -3,7 +3,7 @@
         width: 400px;
     }
 
-    .hero-title, .projects-title {
+    .hero-title, .projects-title, .technologies-title {
         font-size: 50px;
     }
 
@@ -57,8 +57,14 @@
         text-align: center;
     }
 
-    .projects-title {
+    .projects-title, .technologies-title, .technologies-skills {
         margin-left: 0;
+    }
+
+    .technologies-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -89,7 +95,7 @@
         max-width: 600px;
     }
 
-    .hero-title, .projects-title {
+    .hero-title, .projects-title, .technologies-title  {
         font-size: 40px;
     }
 }
@@ -99,13 +105,7 @@
 }
 
 @media screen and (max-width: 1140px) {
-    .technologies-skill-name {
-        font-size: 22px;
-    }
 
-    .technologies-skill-level {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 1030px) {
@@ -177,33 +177,13 @@
 }
 
 @media screen and (max-width: 768px) {
-
-
-    .technologies-skill-name {
-        font-size: 16px;
-    }
-
-    .technologies-skill-scale {
-        height: 18px;
-    }
-
-    .technologies-skill-level {
-        font-size: 16px;
+    .projects {
+        margin-bottom: 170px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .technologies-skill-name {
-        font-size: 12px;
-    }
 
-    .technologies-skill-scale {
-        height: 18px;
-    }
-
-    .technologies-skill-level {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -220,13 +200,35 @@
         width: 80px;
     }
 
-    .hero-title, .projects-title {
+    .hero-title, .projects-title, .technologies-title  {
         font-size: 30px;
+        margin-bottom: 90px;
     }
 
     .hero-description p {
         font-size: 16px;
     }
+
+    .skill-name {
+        font-size: 22px;
+    }
+    .skill-level {
+        font-size: 12px;
+    }
+
+    .technologies-skill-scale {
+        height: 20px;
+    }
+
+    .technologies-skill {
+        position: relative;
+        width: 80%;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -249,5 +251,13 @@
         width: 220px;
         height: 60px;
         font-size: 20px;
+    }
+
+    .technologies-skill-scale {
+        height: 15px;
+    }
+
+    .projects {
+        margin-bottom: 10 add 0px;
     }
 }
