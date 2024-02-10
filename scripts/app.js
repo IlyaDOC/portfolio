@@ -1,7 +1,24 @@
-new WOW(
-    {
-        animateClass: 'animate__animated'
-    }).init();
+
+// new WOW(
+//     {
+//         animateClass: 'animate__animated'
+//     }).init();
+
+
+new WOW({
+    boxClass: 'wow',
+    animateClass: 'animate__animated',
+    offset: 0,
+    mobile: true,
+    live: true
+}).init();
+
+$('#myTimeline').verticalTimeline({
+    startLeft: false,
+    alternate: true,
+    animate: "fade",
+    arrows: false
+});
 
 export class App {
     constructor() {
