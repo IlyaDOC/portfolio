@@ -52,6 +52,12 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .footer-contacts {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 1319px) {
     .projects-title, .technologies-title, .additional-skills-title, .about-title  {
         text-align: center;
@@ -81,6 +87,16 @@
 
     .hero-main-image img {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-contacts {
+        font-size: 24px;
+    }
+
+    .footer-socials-item a svg{
+        width: 50px;
     }
 }
 
@@ -115,6 +131,12 @@
 @media screen and (max-width: 1030px) {
     .hero-main-image {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-contacts {
+        flex-direction: column;
     }
 }
 
@@ -181,7 +203,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .projects, .technologies {
+    .projects, .technologies, .about {
         margin-bottom: 170px;
     }
 
@@ -191,6 +213,26 @@
 
     .additional-skills-items {
         margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 711px){
+    .footer-tel-email {
+        flex-direction: column;
+    }
+
+    .footer-telephone, .footer-email {
+        margin-right: 0;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer-email-text, .footer-telephone-text {
+        margin-right: 15px;
+    }
+
+    .footer {
+        padding: 0 30px;
     }
 }
 
@@ -279,5 +321,9 @@
 
     .additional-skills-items {
         margin-left: 50px;
+    }
+
+    .footer-tel-email {
+        font-size: 18px;
     }
 }

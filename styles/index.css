@@ -658,22 +658,34 @@ body {
 
 
 .footer {
-    padding-bottom: 80px;
+    padding: 0 80px 80px 80px;
 }
 
 .footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+}
+
+.footer-tel-email {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.footer-telephone {
+    margin-right: 134px;
+}
 
 .footer-socials-items {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 359px;
+    /*margin-left: 359px;*/
 }
 
 .footer-socials-item {
