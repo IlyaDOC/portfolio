@@ -16,11 +16,7 @@
     font-weight: 600;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
+
 
 @font-face {
     src: url("../fonts/Poppins-Medium.ttf");
@@ -668,6 +664,11 @@ body {
     font-size: 42px;
     font-weight: 600;
     line-height: 63px;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .footer-tel-email {
